@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>CREDPAY | PAY YOUR BILLS</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>credpay</h1>
+            <p>Pay your bills through Credpay</p>
+        </div>
+        <div class="receipt">
+            <button class="btnrecpt">get receipt</button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+          <div class="bills">
+              <div class="secondary"><h2>Pay your bills</h2></div>
+              <div class="bill-icons">
+                 <button class="btn-bill">
+                     <img src="/images/electricity-bill.png" alt="bill" class="bill">  
+                 </button>
+                 
+                 <button class="btn-bill">
+                     <img src="/images/maintenance.png" alt="bill" class="bill"> 
+                 </button>
+                 
+                 <button class="btn-bill">
+                     <img src="/images/wallet.png" alt="bill" class="bill"> 
+                 </button> 
+              </div>
+              <div class="bill-text">
+                 <h3>Electricity</h3>
+                 <h3 class="water">Water</h3>
+                 <h3>WiFi</h3>
+              </div>
+              <div class="cartbox"><button class="cart">Add to cart</button></div>
+          </div>
+          <form class="checkout">
+              <div class="checkout-box">
+                 <div class="checkout-left">
+                     <label for="name" class="label-left">Name on Card</label>
+                     <span><input type="text" placeholder="Name" class="input-left" id="name"></span>
+                     <label for="card" class="label-left">Card Number</label>
+                     <span><input type="text" placeholder="Card Number" class="input-left" id="card"></span>
+                 </div>
+                 <div class="checkout-right">
+                     <label for="expiry-month" class="label-right">Month</label>
+                     <span><input type="text" placeholder="03" class="input-right" id="expiry-month"></span>
+                     <label for="expiry-year" class="label-right">Year</label>
+                     <span><input type="text" placeholder="2045" class="input-right" id="expiry-year"></span>
+                     <label for="security" class="label-right"> Security Code ?</label>
+                     <span><input type="password"  maxlength="3" class="input-right" id="security"></span>
+                 </div>
+                  <div class="checkout-below">
+                      <div class="secure">
+                         <img src="/images/shield.png" alt="shield" class="secured">
+                      </div>
+                      <div class="payment">
+                         <button class="pay">Pay</button>
+                      </div>
+                  </div>
+              </div>
+           </form>
+           <div class="final-cart">
+               <div class="carts">
+                  <img src="/images/check.png" alt="check" class="tick">
+                  <h4>Electric bill added</h4>
+               </div>
+               <div class="carts">
+                  <img src="/images/check.png" alt="check" class="tick">
+                 <h4>Wifi bill added</h4>
+               </div>
+               <div class="carts">
+                 <img src="/images/check.png" alt="check" class="tick">
+                 <h4>Water bill added</h4>
+              </div>  
+           </div> 
+        </div>
+    </main>
+</body>
+</html>
